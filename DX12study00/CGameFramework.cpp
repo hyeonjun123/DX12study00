@@ -2,7 +2,7 @@
 
 CGameFramework::CGameFramework()
 {
-	_tcscpy_s(m_pszFrameRate, _T("LapProject (")); //framerate
+	_tcscpy_s(m_pszFrameRate, _T("LabProject (")); //framerate
 
 	m_pdxgiFactory = NULL;
 	m_pdxgiSwapChain = NULL;
