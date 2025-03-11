@@ -1,6 +1,2 @@
-﻿  stdfx.cpp
-  CGameFramework.cpp
-  Timer.cpp
-  DX12study00.cpp
-  코드를 생성하고 있습니다...
+﻿  CGameFramework.cpp
   DX12study00.vcxproj -> C:\Users\user\source\repos\DX12study00\x64\Debug\DX12study00.exe
