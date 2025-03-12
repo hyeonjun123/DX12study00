@@ -15,6 +15,10 @@
       "RelativeMoniker": "D:0:0:{EBB4051B-2124-447E-9B50-528FEAC5E9E2}|DX12study00\\DX12study00.vcxproj|solutionrelative:DX12study00\\DX12study00.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EBB4051B-2124-447E-9B50-528FEAC5E9E2}|DX12study00\\DX12study00.vcxproj|C:\\Users\\user\\source\\repos\\DX12study00\\DX12study00\\DX12study00.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EBB4051B-2124-447E-9B50-528FEAC5E9E2}|DX12study00\\DX12study00.vcxproj|solutionrelative:DX12study00\\DX12study00.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EBB4051B-2124-447E-9B50-528FEAC5E9E2}|DX12study00\\DX12study00.vcxproj|C:\\Users\\user\\source\\repos\\DX12study00\\DX12study00\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{EBB4051B-2124-447E-9B50-528FEAC5E9E2}|DX12study00\\DX12study00.vcxproj|solutionrelative:DX12study00\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -40,7 +44,7 @@
               "RelativeDocumentMoniker": "DX12study00\\CGameFramework.cpp",
               "ToolTip": "C:\\Users\\user\\source\\repos\\DX12study00\\DX12study00\\CGameFramework.cpp",
               "RelativeToolTip": "DX12study00\\CGameFramework.cpp",
-              "ViewState": "AgIAAJYBAAAAAAAAAAAqwOYBAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAJwBAAAAAAAAAAAMwPQBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-11T01:48:38.225Z",
               "EditorCaption": ""
@@ -48,6 +52,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "DX12study00.h",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\DX12study00\\DX12study00\\DX12study00.h",
+              "RelativeDocumentMoniker": "DX12study00\\DX12study00.h",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\DX12study00\\DX12study00\\DX12study00.h",
+              "RelativeToolTip": "DX12study00\\DX12study00.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-11T08:45:00.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "stdafx.h",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\DX12study00\\DX12study00\\stdafx.h",
               "RelativeDocumentMoniker": "DX12study00\\stdafx.h",
@@ -65,7 +81,7 @@
               "RelativeDocumentMoniker": "DX12study00\\DX12study00.cpp",
               "ToolTip": "C:\\Users\\user\\source\\repos\\DX12study00\\DX12study00\\DX12study00.cpp",
               "RelativeToolTip": "DX12study00\\DX12study00.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAArwCQAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAArwEQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-11T07:43:07.655Z"
             },
@@ -77,7 +93,7 @@
               "RelativeDocumentMoniker": "DX12study00\\CGameFramework.h",
               "ToolTip": "C:\\Users\\user\\source\\repos\\DX12study00\\DX12study00\\CGameFramework.h",
               "RelativeToolTip": "DX12study00\\CGameFramework.h",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAAEsAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAApwDEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-11T07:49:14.694Z"
             }
