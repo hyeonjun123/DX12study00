@@ -1,8 +1,9 @@
 ﻿// DX12study00.cpp : 애플리케이션에 대한 진입점을 정의합니다.
 //
-
+#include "stdafx.h"
 #include "DX12study00.h"
 #include "CGameFramework.h"
+#include <iostream>
 
 CGameFramework gGameFramework;
 #define MAX_LOADSTRING 100
@@ -18,6 +19,35 @@ BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 
+void CompileShader(const std::wstring& filename, const std::string& entryPoint, const std::string& target) {
+    ID3DBlob* shaderBlob = nullptr;
+    ID3DBlob* errorBlob = nullptr;
+
+    HRESULT hr = D3DCompileFromFile(
+        filename.c_str(),
+        nullptr, nullptr,
+        entryPoint.c_str(),
+        target.c_str(),
+        D3DCOMPILE_DEBUG | D3DCOMPILE_SKIP_OPTIMIZATION,
+        0,
+        &shaderBlob,
+        &errorBlob
+    );
+
+    if (FAILED(hr)) {
+        if (errorBlob) {
+            std::cerr << "셰이더 컴파일 오류: " << (char*)errorBlob->GetBufferPointer() << std::endl;
+            errorBlob->Release();
+        }
+        else {
+            std::cerr << "셰이더 파일을 로드할 수 없습니다!" << std::endl;
+        }
+    }
+    else {
+        std::cout << entryPoint << " 컴파일 성공!" << std::endl;
+        shaderBlob->Release();
+    }
+}
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_opt_ HINSTANCE hPrevInstance,
                      _In_ LPWSTR    lpCmdLine,
@@ -43,16 +73,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
     MSG msg;
 
-    // 기본 메시지 루프입니다:
-    /*while (GetMessage(&msg, nullptr, 0, 0))
-    {
-        if (!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
-        {
-            TranslateMessage(&msg);
-            DispatchMessage(&msg);
-        }
-    }*/
-    //변경
+
+    CompileShader(L"Shaders.hlsl", "VSMain", "vs_5_0");
+    CompileShader(L"Shaders.hlsl", "PSMain", "ps_5_0");
+
     while (1)
     {
         if (::PeekMessage(&msg, NULL, 0, 0, PM_REMOVE))
@@ -200,3 +224,7 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
     }
     return (INT_PTR)FALSE;
 }
+
+
+
+

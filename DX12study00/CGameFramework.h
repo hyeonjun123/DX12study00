@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
 #include "Timer.h"
+#include "Scene.h"
 
 class CGameFramework
 {
@@ -38,6 +38,10 @@ private:
 	//그래픽스 파이프라인 상태 객체에 대한 인터페이스 포인터이다.
 	ID3D12Fence* m_pd3dFence;
 	UINT64 m_nFenceValue;
+	UINT64 m_nFenceValues[m_nSwapChainBuffers];
+	CScene* m_pScene;
+
+
 	HANDLE m_hFenceEvent;
 	//펜스 인터페이스 포인터, 펜스의 값, 이벤트 핸들이다.
 	D3D12_VIEWPORT m_d3dViewport;
@@ -49,6 +53,8 @@ private:
 	//다음은 프레임 레이트를 주 윈도우의 캡션에 출력하기 위한 문자열이다.
 	_TCHAR m_pszFrameRate[50];
 
+public:
+	void MoveToNextFrame();
 
 
 

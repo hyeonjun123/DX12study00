@@ -1,7 +1,6 @@
 #include "stdafx.h"
 #include "Timer.h"
-#include <windows.h>
-#include <mmsystem.h>
+
 
 CGameTimer::CGameTimer()
 {
